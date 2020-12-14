@@ -2008,6 +2008,7 @@ alert("CANC");
         }
 
         function getSignaturee() {
+		STPadServerLibCommons.destroyConnection();
     STPadServerLibCommons.createConnection(wsUri, oOpen, onClose, onError);
         }
 		
@@ -2063,7 +2064,7 @@ alert("CANC");
 </script>
 </head>
 <body>
-<button onclick="getSignaturee()"> AAA </button>
+<button onclick="getSignaturee()"> AA </button>
 </body>
 
 </html>
